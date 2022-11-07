@@ -1,0 +1,56 @@
+[1mdiff --git a/app/src/main/java/game/Game.java b/app/src/main/java/game/Game.java[m
+[1mindex eb2c67e..a22ed64 100644[m
+[1m--- a/app/src/main/java/game/Game.java[m
+[1m+++ b/app/src/main/java/game/Game.java[m
+[36m@@ -45,6 +45,9 @@[m [mpublic class Game {[m
+ [m
+     static Font font;[m
+ [m
+[32m+[m
+[32m+[m[32m    MainMenu menu = new MainMenu();[m
+[32m+[m
+     static int[][] map =    {{0,1,1,1,0,1,1,0,0,0,1,0,0,0,1,0,0,0,0,1},[m
+                             {0,1,0,1,1,1,0,0,1,1,1,1,1,0,1,1,1,1,1,1},[m
+                             {1,1,0,1,0,1,0,1,1,0,0,0,1,1,1,0,0,0,0,1},[m
+[1mdiff --git a/app/src/main/java/game/GameScreen.java b/app/src/main/java/game/GameScreen.java[m
+[1mindex b12eb89..a097dae 100644[m
+[1m--- a/app/src/main/java/game/GameScreen.java[m
+[1m+++ b/app/src/main/java/game/GameScreen.java[m
+[36m@@ -1,7 +1,11 @@[m
+ package game;[m
+ [m
+[32m+[m[32mimport javax.imageio.ImageIO;[m
+ import javax.swing.*;[m
+ import java.awt.*;[m
+[32m+[m[32mimport java.awt.image.BufferedImage;[m
+[32m+[m[32mimport java.io.File;[m
+[32m+[m[32mimport java.io.IOException;[m
+ [m
+ public class GameScreen extends JPanel {[m
+ [m
+[1mdiff --git a/app/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst b/app/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst[m
+[1mindex ba624be..e69de29 100644[m
+[1m--- a/app/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst[m
+[1m+++ b/app/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst[m
+[36m@@ -1,21 +0,0 @@[m
+[31m-game\Game$4.class[m
+[31m-game\Enemy.class[m
+[31m-game\Panel.class[m
+[31m-game\Reward.class[m
+[31m-game\MainMenu$1.class[m
+[31m-game\Character$KeyListenerTest.class[m
+[31m-game\Punishment.class[m
+[31m-game\Character.class[m
+[31m-game\LeaderBoard.class[m
+[31m-game\Game$6.class[m
+[31m-game\Game$7.class[m
+[31m-game\GameScreen.class[m
+[31m-game\Game$3.class[m
+[31m-game\MainMenu$NewGameButtonListener.class[m
+[31m-game\Game$5.class[m
+[31m-game\Game$1.class[m
+[31m-game\Game.class[m
+[31m-game\Game$2.class[m
+[31m-game\MainMenu.class[m
+[31m-game\HighScore.class[m
+[31m-game\Point.class[m
